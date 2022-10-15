@@ -10,11 +10,11 @@ export default class MyDocument extends Document {
           <Head>
             <meta
               name='google-site-verification'
-              content='Zd8IhHjBYgO5M3l0oOViRYwa8OXdg2aLSOjUTIwe7yw'
+              content='tNpEvRKUbirAkwRA-XH0HJzDh8bCF6Waqctqu1Hak38'
             />
             <meta
               name='naver-site-verification'
-              content='a50a08504e695cb943751e7ba6409a62103efc5c'
+              content='446867f8de67b823d528e7db60a27a12968bc2ab'
             />
             <link rel='shortcut icon' href='/favicon.png' />
 
