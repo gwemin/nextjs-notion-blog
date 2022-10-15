@@ -15,9 +15,9 @@ import { NotionPageInfo } from 'lib/types'
 import * as libConfig from 'lib/config'
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
-  if (req.method !== 'POST') {
-    return res.status(405).send({ error: 'method not allowed' })
-  }
+  // if (req.method !== 'POST') {
+  //   return res.status(405).send({ error: 'method not allowed' })
+  // }
 
   const pageId: string = parsePageId(req.body.pageId)
   if (!pageId) {
