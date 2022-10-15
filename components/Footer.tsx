@@ -3,10 +3,9 @@ import { FaTwitter } from '@react-icons/all-files/fa/FaTwitter'
 import { FaZhihu } from '@react-icons/all-files/fa/FaZhihu'
 import { FaGithub } from '@react-icons/all-files/fa/FaGithub'
 import { FaLinkedin } from '@react-icons/all-files/fa/FaLinkedin'
-import { FaEnvelopeOpenText } from '@react-icons/all-files/fa/FaEnvelopeOpenText'
-import { FaYoutube } from '@react-icons/all-files/fa/FaYoutube'
 import { IoSunnyOutline } from '@react-icons/all-files/io5/IoSunnyOutline'
 import { IoMoonSharp } from '@react-icons/all-files/io5/IoMoonSharp'
+import { FaInstagram } from '@react-icons/all-files/fa/FaInstagram'
 
 import { useDarkMode } from 'lib/use-dark-mode'
 import * as config from 'lib/config'
@@ -33,7 +32,22 @@ export const FooterImpl: React.FC = () => {
 
   return (
     <footer className={styles.footer}>
-      <div className={styles.copyright}>Copyright 2022 {config.author}</div>
+      <div className={styles.copyright}>
+        <div
+          style={{
+            justifyContent: 'center',
+            alignItems: 'center'
+          }}
+        >
+          <a href='https://hits.seeyoufarm.com'>
+            <img
+              style={{ display: 'block', margin: '0px auto' }}
+              src='https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fhmdev.vercel.app&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Total hits&edge_flat=true'
+            />
+          </a>
+          <div>Copyright 2022 {config.author} </div>
+        </div>
+      </div>
 
       <div className={styles.settings}>
         {hasMounted && (
@@ -98,27 +112,15 @@ export const FooterImpl: React.FC = () => {
           </a>
         )}
 
-        {config.newsletter && (
+        {config.instagram && (
           <a
-            className={styles.newsletter}
-            href={`${config.newsletter}`}
-            title={`Newsletter ${config.author}`}
+            className={styles.instagram}
+            href={`https://www.instagram.com/${config.instagram}`}
+            title={`instagram ${config.author}`}
             target='_blank'
             rel='noopener noreferrer'
           >
-            <FaEnvelopeOpenText />
-          </a>
-        )}
-
-        {config.youtube && (
-          <a
-            className={styles.youtube}
-            href={`https://www.youtube.com/${config.youtube}`}
-            title={`YouTube ${config.author}`}
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <FaYoutube />
+            <FaInstagram />
           </a>
         )}
       </div>

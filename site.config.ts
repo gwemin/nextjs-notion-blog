@@ -10,7 +10,7 @@ export default siteConfig({
 
   // basic site info (required)
   name: 'Gwemin Blog',
-  domain: 'nextjs-notion-starter-kit.transitivebullsh.it',
+  domain: 'gwemin.vercel.app',
   author: 'Gwemin',
 
   // open graph metadata (optional)
@@ -19,16 +19,22 @@ export default siteConfig({
   // social usernames (optional)
   twitter: '',
   github: 'gwemin',
-  linkedin: '',
-  // newsletter: '#', // optional newsletter URL
-  // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
+  instagram: '',
 
   // default notion icon and cover images for site-wide consistency (optional)
   // page-specific values will override these site-wide defaults
-  defaultPageIcon: null,
+  defaultPageIcon:'https://gwemin.vercel.app/page-icon.jpg',
   defaultPageCover: null,
   defaultPageCoverPosition: 0.5,
 
+  // Utteranc.es comments via GitHub issue comments (optional)
+  utterancesGitHubRepo: 'gwemin/nextjs-notion-blog',
+ 
+  // Cusdis comment widget (optional)
+  // cusdis: {
+  //   appId: 'd39a1dc4-5580-4ad8-8d75-c6a486475b5a' // your website id
+  // },
+  
   // whether or not to enable support for LQIP preview images (optional)
   isPreviewImageSupportEnabled: true,
 
@@ -53,12 +59,12 @@ export default siteConfig({
   // navigationStyle: 'custom',
   // navigationLinks: [
   //   {
-  //     title: 'About',
-  //     pageId: 'f1199d37579b41cbabfc0b5174f4256a'
+  //     title: 'About me',
+  //     pageId: 'a32a59aec23c41e08452757e94d96418'
   //   },
-  //   {
-  //     title: 'Contact',
-  //     pageId: '6a29ebcb935a4f0689fe661ab5f3b8d1'
-  //   }
+    // {
+    //   title: 'Contact',
+    //   pageId: '6a29ebcb935a4f0689fe661ab5f3b8d1'
+    // }
   // ]
-})
+});

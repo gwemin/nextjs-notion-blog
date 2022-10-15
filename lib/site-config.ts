@@ -13,18 +13,19 @@ export interface SiteConfig {
   twitter?: string
   github?: string
   linkedin?: string
-  newsletter?: string
-  youtube?: string
   zhihu?: string
+  instagram?: string
 
   defaultPageIcon?: string | null
   defaultPageCover?: string | null
   defaultPageCoverPosition?: number | null
+  
 
   isPreviewImageSupportEnabled?: boolean
   isTweetEmbedSupportEnabled?: boolean
   isRedisEnabled?: boolean
   isSearchEnabled?: boolean
+  utterancesGitHubRepo?: string
 
   includeNotionIdInUrls?: boolean
   pageUrlOverrides?: types.PageUrlOverridesMap
